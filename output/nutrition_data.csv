@@ -1,0 +1,91 @@
+product_image,serving_size,parse_status,nutrient_name_raw,nutrient_name_standard,amount,unit,original_amount,original_unit,daily_value_pct
+product_01.png,2 Capsules,complete,Vitamin B12,vitamin_b12,1000,µg,1000,µg,40000
+product_01.png,2 Capsules,complete,Vitamin D3,vitamin_d,2000.0,IU,50,µg,1000
+product_01.png,2 Capsules,complete,Lion's Mane,lions_mane,600,mg,600,mg,
+product_01.png,2 Capsules,complete,Ashwagandha,ashwagandha,300,mg,300,mg,
+product_01.png,2 Capsules,complete,L-Theanine,l_theanine,150,mg,150,mg,
+product_01.png,2 Capsules,complete,Bacopa,bacopa,200,mg,200,mg,
+product_01.png,2 Capsules,complete,Guarana,guarana,100,mg,100,mg,
+product_03.png,1.5ml,complete,Shiitake Mushroom,shiitake_mushroom,103,mg,103,mg,
+product_03.png,1.5ml,complete,Maitake Mushroom,maitake_mushroom,94,mg,94,mg,
+product_03.png,1.5ml,complete,Elderberry,elderberry,94,mg,94,mg,
+product_03.png,1.5ml,complete,Ginger,ginger,50,mg,50,mg,
+product_03.png,1.5ml,complete,Thyme,thyme,47,mg,47,mg,
+product_03.png,1.5ml,complete,Vitamin C,vitamin_c,75,mg,75,mg,94
+product_07.jpg,1 capsule,complete,Vitamin D3,vitamin_d,400.0,IU,10,µg,200
+product_07.jpg,1 capsule,complete,Vitamin E,vitamin_e,2.5,mg α-te,2.5,mg α-te,21
+product_07.jpg,1 capsule,complete,Vitamin C,vitamin_c,25,mg,25,mg,31
+product_07.jpg,1 capsule,complete,Thiamin (Vitamin B1),thiamin_vitamin_b1,8.27,mg,8.27,mg,752
+product_07.jpg,1 capsule,complete,Riboflavin (Vitamin B2),riboflavin_vitamin_b2,8.33,mg,8.33,mg,595
+product_07.jpg,1 capsule,complete,Niacin (as Nicotinamide),niacin_as_nicotinamide,8,mg,8,mg,50
+product_07.jpg,1 capsule,complete,Vitamin B6 (as Pyridoxine),vitamin_b6_as_pyridoxine,8,mg,8,mg,571
+product_07.jpg,1 capsule,complete,Folic Acid (as Folate),folic_acid_as_folate,400,µg,400,µg,200
+product_07.jpg,1 capsule,complete,Vitamin B12 (as methylcobalamin),vitamin_b12_as_methylcobalamin,50,µg,50,µg,2000
+product_07.jpg,1 capsule,complete,Biotin,vitamin_b7,75,µg,75,µg,150
+product_07.jpg,1 capsule,complete,Pantothenic Acid (Vitamin B5),pantothenic_acid_vitamin_b5,30,mg,30,mg,500
+product_07.jpg,1 capsule,complete,Vitamin K2 (as menaquinone-7),vitamin_k2_as_menaquinone7,75,µg,75,µg,100
+product_07.jpg,1 capsule,complete,Iron,iron,4.2,mg,4.2,mg,30
+product_07.jpg,1 capsule,complete,Zinc,zinc,5,mg,5,mg,50
+product_07.jpg,1 capsule,complete,Copper,copper,250,µg,250,µg,25
+product_07.jpg,1 capsule,complete,Manganese,manganese,0.5,mg,0.5,mg,25
+product_07.jpg,1 capsule,complete,Selenium,selenium,55,µg,55,µg,100
+product_07.jpg,1 capsule,complete,Chromium (Cr3+),chromium_cr3,30,µg,30,µg,75
+product_07.jpg,1 capsule,complete,Iodine,iodine,55,µg,55,µg,38
+product_07.jpg,1 capsule,complete,Molybdenum,molybdenum,15,µg,15,µg,30
+product_07.jpg,1 capsule,complete,Beta Carotene,beta_carotene,500,µg,500,µg,
+product_09.png,1 scoop (6.54g),complete,Energy,energy_kcal,84,kJ,84,kJ,1
+product_09.png,1 scoop (6.54g),complete,Energy,energy_kcal,20,kcal,20,kcal,1
+product_09.png,1 scoop (6.54g),complete,Carbohydrate,total_carbohydrate,4,g,4,g,2
+product_09.png,1 scoop (6.54g),complete,Of which sugars,of_which_sugars,0.5,g,0.5,g,1
+product_09.png,1 scoop (6.54g),complete,Salt,sodium,0.0375,g,0.0375,g,0.6
+product_09.png,1 scoop (6.54g),complete,Potassium,potassium,120,mg,120,mg,6
+product_09.png,1 scoop (6.54g),complete,Calcium,calcium,30,mg,30,mg,4
+product_09.png,1 scoop (6.54g),complete,Iron,iron,0.8,mg,0.8,mg,6
+product_09.png,1 scoop (6.54g),complete,Organic Wheat Grass Powder (North America),organic_wheat_grass_powder_north_america,3000,mg,3000,mg,
+product_09.png,1 scoop (6.54g),complete,Organic Alfalfa Leaf Powder (North America),organic_alfalfa_leaf_powder_north_america,1000,mg,1000,mg,
+product_09.png,1 scoop (6.54g),complete,Matcha Tea Leaf Powder (Japan),matcha_tea_leaf_powder_japan,750,mg,750,mg,
+product_09.png,1 scoop (6.54g),complete,Tart Cherry Skin,tart_cherry_skin,250,mg,250,mg,
+product_09.png,1 scoop (6.54g),complete,Organic Jerusalem Artichoke Root Inulin,organic_jerusalem_artichoke_root_inulin,500,mg,500,mg,
+product_09.png,1 scoop (6.54g),complete,Chicory Root,chicory_root,500,mg,500,mg,
+product_09.png,1 scoop (6.54g),complete,Ashwagandha Root Extract (2.5% Withanolides),ashwagandha_root_extract_25_withanolides,200,mg,200,mg,
+product_09.png,1 scoop (6.54g),complete,"Rhodiola Root Extract (3% Rosavins, 2% Salidrosides)",rhodiola_root_extract_3_rosavins_2_salidrosides,100,mg,100,mg,
+product_10.png,2 Capsules,complete,Vitamin B12,vitamin_b12,1000,µg,1000,µg,40000
+product_10.png,2 Capsules,complete,Vitamin D3,vitamin_d,2000.0,IU,50,µg,1000
+product_10.png,2 Capsules,complete,Lion's Mane (Hericium erinaceus) 10:1,lions_mane_hericium_erinaceus_101,600,mg,600,mg,
+product_10.png,2 Capsules,complete,Ashwagandha KSM-66®,ashwagandha_ksm66,300,mg,300,mg,
+product_10.png,2 Capsules,complete,L-Theanine,l_theanine,150,mg,150,mg,
+product_10.png,2 Capsules,complete,Bacopa Monnieri (45% Bacosides),bacopa_monnieri_45_bacosides,200,mg,200,mg,
+product_10.png,2 Capsules,complete,Guarana (22% Caffeine),guarana_22_caffeine,100,mg,100,mg,
+product_11.png,1 Softgel (1.2g),complete,Energy,energy_kcal,42,kJ,42,kJ,0.5
+product_11.png,1 Softgel (1.2g),complete,Energy,energy_kcal,10,kcal,10,kcal,
+product_11.png,1 Softgel (1.2g),complete,Total Fat,total_fat,1.1,g,1.1,g,1.6
+product_11.png,1 Softgel (1.2g),complete,Of which Saturates,of_which_saturates,0.05,g,0.05,g,0.5
+product_11.png,1 Softgel (1.2g),complete,Of which Saturates,of_which_saturates,0.1,g,0.1,g,
+product_11.png,1 Softgel (1.2g),complete,Of which Monounsaturates,of_which_monounsaturates,0.1,g,0.1,g,
+product_11.png,1 Softgel (1.2g),complete,Of which Polyunsaturates,of_which_polyunsaturates,0.9,g,0.9,g,
+product_11.png,1 Softgel (1.2g),complete,Cholesterol,cholesterol,2.5,mg,2.5,mg,1.7
+product_11.png,1 Softgel (1.2g),complete,Salt,sodium,0.005,g,0.005,g,0.16
+product_11.png,1 Softgel (1.2g),complete,Total Omega-3 Fatty Acids,total_omega3_fatty_acids,900,mg,900,mg,
+product_11.png,1 Softgel (1.2g),complete,EPA (Eicosapentaenoic Acid) (rTG form),epa_eicosapentaenoic_acid_rtg_form,500,mg,500,mg,
+product_11.png,1 Softgel (1.2g),complete,DHA (Docosahexaenoic Acid) (rTG form),dha_docosahexaenoic_acid_rtg_form,250,mg,250,mg,
+product_11.png,1 Softgel (1.2g),complete,Other Omega-3s,other_omega3s,150,mg,150,mg,
+product_11.png,1 Softgel (1.2g),complete,Vitamin E (as d-alpha tocopherol),vitamin_e_as_dalpha_tocopherol,15,mg,15,mg,125
+product_11.png,1 Softgel (1.2g),complete,Rosemary Extract (Rosmarinus officinalis),rosemary_extract_rosmarinus_officinalis,5,mg,5,mg,
+product_12.png,1 Softgel (1.2g),complete,Energy,energy_kcal,42,kJ,42,kJ,
+product_12.png,1 Softgel (1.2g),complete,Energy,energy_kcal,10,kcal,10,kcal,0.5
+product_12.png,1 Softgel (1.2g),complete,Total Fat,total_fat,1.1,g,1.1,g,1.6
+product_12.png,1 Softgel (1.2g),complete,Saturates,saturates,0.1,g,0.1,g,0.5
+product_12.png,1 Softgel (1.2g),complete,Monounsaturates,monounsaturates,0.1,g,0.1,g,
+product_12.png,1 Softgel (1.2g),complete,Polyunsaturates,polyunsaturates,0.9,g,0.9,g,
+product_12.png,1 Softgel (1.2g),complete,EPA (rTG form),epa_rtg_form,500,mg,500,mg,
+product_12.png,1 Softgel (1.2g),complete,DHA (rTG form),dha_rtg_form,250,mg,250,mg,
+product_12.png,1 Softgel (1.2g),complete,Total Omega-3 Fatty Acids,total_omega3_fatty_acids,900,mg,900,mg,
+product_12.png,1 Softgel (1.2g),complete,Other Omega-3s,other_omega3s,150,mg,150,mg,
+product_12.png,1 Softgel (1.2g),complete,Cholesterol,cholesterol,0.5,mg,0.5,mg,1.7
+product_12.png,1 Softgel (1.2g),complete,Salt,sodium,0.01,g,0.01,g,0.16
+product_12.png,1 Softgel (1.2g),complete,Vitamin E (as d-alpha tocopherol),vitamin_e_as_dalpha_tocopherol,15,mg,15,mg,125
+product_12.png,1 Softgel (1.2g),complete,Rosemary Extract (Rosmarinus officinalis),rosemary_extract_rosmarinus_officinalis,5,mg,5,mg,
+product_13.png,2 Kapseln,complete,Fischöl-Konzentrat,fischölkonzentrat,1000,mg,1000,mg,
+product_13.png,2 Kapseln,complete,davon EPA,davon_epa,330,mg,330,mg,
+product_13.png,2 Kapseln,complete,davon DHA,davon_dha,220,mg,220,mg,
+product_13.png,2 Kapseln,complete,Vitamin E,vitamin_e,5,mg,5,mg,42

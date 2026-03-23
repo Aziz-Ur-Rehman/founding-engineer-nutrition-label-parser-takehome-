@@ -1,122 +1,105 @@
-# 🏷️ Product Label Nutrition Parser — Take-Home Assignment
+# Nutrition Label Parser
 
-We expect this to take **4–6 hours**. Please don't spend more than that.
-
----
-
-## Before you start
-
-Most take-home assignments hand you a spec and ask you to implement it. This one doesn't.
-
-We care less about whether your parser handles every edge case and more about **how you think through a problem that has no clean answer**. The nutrition label domain is intentionally messy, inconsistent, and under-defined — the same way real product work is.
-
-Read the brief. Then decide what to build, what to skip, and why.
+Takes a folder of product label images and produces a structured CSV of nutritional information.
 
 ---
 
-## Overview
-
-Consumer health and nutrition products publish nutrition or supplement facts on product labels — but these labels vary significantly in layout, formatting, naming conventions, and units.
-
-Your task: **build a system that takes a folder of product label images and produces a structured, normalised dataset of nutritional information.**
-
-A sample image folder is provided. No other setup or scaffolding is given — that's intentional.
-
----
-
-## Input
+## How It Works
 
 ```
-sample_images/
-├── product_01.jpg
-├── product_02.jpg
-└── ...
+Image → Classify + Extract (Claude Vision) → Normalize → CSV
 ```
 
-Images may contain nutrition facts panels, supplement facts tables, ingredient lists, and serving size information. They intentionally vary in layout, naming conventions, units, and text structure.
+Each image goes through a single Claude API call that first checks whether the image actually has a nutrition table, then extracts the data if it does. Normalization is plain Python — no LLM involved. All images are processed concurrently so the pipeline doesn't slow down as you add more.
+
+### Structure
+
+```
+├── main.py
+├── prompts/
+│   └── extraction_prompt.txt
+└── source_code/
+    ├── config.py
+    ├── models.py
+    ├── extractor.py
+    ├── normalizer.py
+    ├── pipeline.py
+    ├── writer.py
+    └── data/
+        ├── nutrient_map.py
+        └── unit_map.py
+```
+
+---
+
+## The Decisions
+
+**Why one API call instead of two.**
+The obvious approach is two calls — one to check if the image has nutrition data, one to extract it. I combined them into one. The prompt asks Claude to make the classification decision first, and the response schema enforces it: if `has_data` is false, the nutrients are ignored no matter what the model returned. Same result, half the cost.
+
+**Why async.**
+Sequential processing is fine at 13 images. At a few hundred it becomes the bottleneck. I use `asyncio` with a semaphore to run images concurrently while staying within API rate limits. The concurrency limit is configurable — you don't need to touch the code to tune it.
+
+**Why snake_case for unknown nutrients.**
+Not every nutrient on a label will be in my mapping table. Rather than returning null for the standard name — which is awkward to work with downstream — I convert the raw name to snake_case and use that. The original name is always preserved so nothing is lost.
+
+**Why I kept original_amount and original_unit.**
+For some nutrients I convert units — Vitamin D from µg to IU, for example. But I always store what the label actually said alongside the converted value. If a conversion is wrong, you can see it and fix it. Without the originals, a bad conversion is invisible.
+
+**Why I didn't convert IU to mg.**
+The conversion factor between IU and mg depends on the specific nutrient, and for some nutrients it depends on the form too. Getting it wrong silently is worse than leaving it for a downstream step that knows the context. I only convert where it's unambiguous.
 
 ---
 
 ## Output
 
-Produce a structured dataset. CSV or Excel is fine. Save it to `output/nutrition_data.csv`.
-
-Example output schema:
-
-| `product_image` | `nutrient_name_raw` | `nutrient_name_standard` | `amount` | `unit` |
-|---|---|---|---|---|
-| product_01.jpg | Protein | `protein` | 24 | g |
-| product_01.jpg | Ascorbic Acid | `vitamin_c` | 60 | mg |
-| product_02.jpg | Calcium | `calcium` | 200 | mg |
-
-You can extend this schema if you think there's a good reason to. You can simplify it if you think parts are wrong. Just explain why.
+| Column | Description |
+|---|---|
+| `product_image` | Source filename |
+| `serving_size` | As printed on the label |
+| `parse_status` | `complete`, `partial`, `no_data`, or `failed` |
+| `nutrient_name_raw` | Exactly as it appeared on the label |
+| `nutrient_name_standard` | Normalised e.g. `vitamin_c` |
+| `amount` | Numeric value |
+| `unit` | Normalised unit |
+| `original_amount` | What the label said |
+| `original_unit` | What the label said |
+| `daily_value_pct` | % daily value if present |
 
 ---
 
-## Standardisation
+## What I'd Do Next
 
-Labels use inconsistent names and units for the same nutrients. Your system should normalise them.
-
-### Nutrient naming examples
-
-| Label text | Standard name |
-|---|---|
-| Vitamin C | `vitamin_c` |
-| Ascorbic Acid | `vitamin_c` |
-| Thiamine Mononitrate | `vitamin_b1` |
-| Pyridoxine HCL | `vitamin_b6` |
-
-### Unit normalisation examples
-
-| Input | Standard unit |
-|---|---|
-| milligrams | `mg` |
-| grams | `g` |
-| mcg | `µg` |
-| IU | `IU` |
-
-These are illustrative, not exhaustive. How far you take normalisation — and where you draw the line — is your call.
+The biggest gap right now is no ground truth to measure against. Before using this in production, I'd manually label a handful of images and compute precision and recall per field. After that — caching API responses so re-runs don't re-call Claude, and growing the nutrient map based on what falls through to the snake_case fallback.
 
 ---
 
-## What we're looking for
+## Setup
 
-We will not be running your code against a hidden test suite. We'll be reading it.
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
-| Criteria | What we're actually evaluating |
-|---|---|
-| Problem decomposition | Did you identify the hard parts early? What did you solve vs. defer, and why? |
-| System design | Is the architecture clear? Would it hold up at 10× the image volume? |
-| Judgment under ambiguity | There are at least five places where the right answer isn't obvious. What did you do at each? |
-| Code quality | Does the code reflect clear thinking? Is it easy to modify? |
+cp .env.example .env
+# Add your ANTHROPIC_API_KEY
 
-A senior engineer who makes three well-reasoned tradeoffs and documents them clearly will score higher than one who attempts to handle every case without acknowledging the mess.
+python main.py
 
----
-
-## Deliverables
-
-A GitHub repository containing:
-
-```
-README.md
-source_code/
-sample_output/
+# Or override the defaults
+python main.py --input-dir my_images --output-dir results
 ```
 
-Your README is as important as your code. It should cover:
+### Environment Variables
 
-- **What you built** — your approach and key decisions
-- **What you decided not to build** — and why
-- **The hardest part** — what was genuinely ambiguous and how you resolved it
-- **What you'd do next** with more time
-
-There are no constraints on language, tools, models, or frameworks. Use whatever you think is right.
-
----
-
-## Submission
-
-1. Fork this repository
-2. Add your solution
-3. Share your forked repo link with us
+| Variable | Default | Description |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | — | Required |
+| `CLAUDE_MODEL` | `claude-opus-4-5` | Model to use |
+| `MAX_TOKENS` | `1000` | Max tokens per response |
+| `INPUT_DIR` | `Sample_images` | Input folder |
+| `OUTPUT_DIR` | `output` | Output folder |
+| `OUTPUT_FILE` | `nutrition_data.csv` | Output filename |
+| `MAX_RETRIES` | `3` | Retry limit per image |
+| `RETRY_DELAY` | `2.0` | Base delay between retries (seconds) |
+| `MAX_CONCURRENCY` | `5` | Max simultaneous API calls |

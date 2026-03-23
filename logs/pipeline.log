@@ -1,0 +1,141 @@
+2026-03-23 21:32:04,511 [INFO] source_code.pipeline: Found 2 images in Sample_images
+2026-03-23 21:32:04,511 [INFO] source_code.pipeline: Processing product_01.png
+2026-03-23 21:32:05,108 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:32:05,109 [WARNING] source_code.extractor: Attempt 1/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLEBZCbq6cjL5VtFEQE'}
+2026-03-23 21:32:07,502 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:32:07,503 [WARNING] source_code.extractor: Attempt 2/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLEMqKsii1aVPB5WHn2'}
+2026-03-23 21:32:11,816 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:32:11,817 [WARNING] source_code.extractor: Attempt 3/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLEgbC6KLhYZ8i1dMiA'}
+2026-03-23 21:32:11,817 [ERROR] source_code.extractor: All 3 attempts failed for product_01.png
+2026-03-23 21:32:11,817 [INFO] source_code.pipeline: Skipping product_01.png — status: failed, error: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLEgbC6KLhYZ8i1dMiA'}
+2026-03-23 21:32:11,818 [INFO] source_code.pipeline: Processing product_02.png
+2026-03-23 21:32:12,191 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:32:12,192 [WARNING] source_code.extractor: Attempt 1/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLEhsLrcGhuz2tn9Cvs'}
+2026-03-23 21:32:14,632 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:32:14,633 [WARNING] source_code.extractor: Attempt 2/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLEt3GvYVZVqwkUCENn'}
+2026-03-23 21:32:19,136 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:32:19,137 [WARNING] source_code.extractor: Attempt 3/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLFDCwsm2cqT7peZwSe'}
+2026-03-23 21:32:19,138 [ERROR] source_code.extractor: All 3 attempts failed for product_02.png
+2026-03-23 21:32:19,138 [INFO] source_code.pipeline: Skipping product_02.png — status: failed, error: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLFDCwsm2cqT7peZwSe'}
+2026-03-23 21:32:19,138 [WARNING] source_code.pipeline: No data extracted from any image.
+2026-03-23 21:35:28,792 [INFO] source_code.pipeline: Found 2 images in Sample_images
+2026-03-23 21:35:28,793 [INFO] source_code.pipeline: Processing product_01.png
+2026-03-23 21:35:29,341 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:35:29,342 [WARNING] source_code.extractor: Attempt 1/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLVErJZUFWBfxSET7E6'}
+2026-03-23 21:35:31,730 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:35:31,731 [WARNING] source_code.extractor: Attempt 2/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLVR5hzQ9vnZHYhSfFR'}
+2026-03-23 21:35:36,148 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:35:36,150 [WARNING] source_code.extractor: Attempt 3/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLVjisytVUGifTZEQQ9'}
+2026-03-23 21:35:36,150 [ERROR] source_code.extractor: All 3 attempts failed for product_01.png
+2026-03-23 21:35:36,150 [INFO] source_code.pipeline: Skipping product_01.png — status: failed, error: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLVjisytVUGifTZEQQ9'}
+2026-03-23 21:35:36,150 [INFO] source_code.pipeline: Processing product_02.png
+2026-03-23 21:35:36,536 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:35:36,538 [WARNING] source_code.extractor: Attempt 1/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLVmcEmHFFqKaixv9XS'}
+2026-03-23 21:35:38,847 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:35:38,848 [WARNING] source_code.extractor: Attempt 2/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLVwjwT3Dt76ptiGamC'}
+2026-03-23 21:35:43,208 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:35:43,209 [WARNING] source_code.extractor: Attempt 3/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLWGFAw1Pr6nZAGsU4i'}
+2026-03-23 21:35:43,209 [ERROR] source_code.extractor: All 3 attempts failed for product_02.png
+2026-03-23 21:35:43,209 [INFO] source_code.pipeline: Skipping product_02.png — status: failed, error: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLWGFAw1Pr6nZAGsU4i'}
+2026-03-23 21:35:43,210 [WARNING] source_code.pipeline: No data extracted from any image.
+2026-03-23 21:37:16,630 [INFO] source_code.pipeline: Found 2 images in Sample_images
+2026-03-23 21:37:16,631 [INFO] source_code.pipeline: Processing product_01.png
+2026-03-23 21:37:17,211 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:37:17,212 [WARNING] source_code.extractor: Attempt 1/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLdC2cUDJ1GA9gCpDSU'}
+2026-03-23 21:37:19,604 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:37:19,605 [WARNING] source_code.extractor: Attempt 2/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLdNLUixLtDjxESRGoV'}
+2026-03-23 21:37:24,075 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:37:24,077 [WARNING] source_code.extractor: Attempt 3/3 failed for product_01.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLdh3NfG9XJ99UEwksp'}
+2026-03-23 21:37:24,077 [ERROR] source_code.extractor: All 3 attempts failed for product_01.png
+2026-03-23 21:37:24,078 [INFO] source_code.pipeline: Skipping product_01.png — status: failed, error: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLdh3NfG9XJ99UEwksp'}
+2026-03-23 21:37:24,078 [INFO] source_code.pipeline: Processing product_02.png
+2026-03-23 21:37:24,484 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:37:24,484 [WARNING] source_code.extractor: Attempt 1/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLdj2S1xcEvZaQV5FHT'}
+2026-03-23 21:37:26,878 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:37:26,879 [WARNING] source_code.extractor: Attempt 2/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLduMHuZTeQSFoEo7K4'}
+2026-03-23 21:37:31,251 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-23 21:37:31,253 [WARNING] source_code.extractor: Attempt 3/3 failed for product_02.png: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLeE8QBFrUK7LisXjiC'}
+2026-03-23 21:37:31,253 [ERROR] source_code.extractor: All 3 attempts failed for product_02.png
+2026-03-23 21:37:31,253 [INFO] source_code.pipeline: Skipping product_02.png — status: failed, error: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZLLeE8QBFrUK7LisXjiC'}
+2026-03-23 21:37:31,254 [WARNING] source_code.pipeline: No data extracted from any image.
+2026-03-23 21:41:08,623 [INFO] source_code.pipeline: Found 2 images in Sample_images
+2026-03-23 21:41:08,624 [INFO] source_code.pipeline: Processing product_01.png
+2026-03-23 21:41:13,807 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 21:41:13,846 [INFO] source_code.pipeline: Extracted 7 nutrients from product_01.png
+2026-03-23 21:41:13,846 [INFO] source_code.pipeline: Processing product_02.png
+2026-03-23 21:41:16,927 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 21:41:16,929 [INFO] source_code.pipeline: Skipping product_02.png — status: no_data
+2026-03-23 21:41:16,931 [INFO] source_code.writer: 7 rows written to output/nutrition_data.csv
+2026-03-23 21:41:16,931 [INFO] source_code.pipeline: Pipeline complete — 7 rows from 1/2 images
+2026-03-23 23:15:05,039 [INFO] source_code.pipeline: Found 13 images in Sample_images
+2026-03-23 23:15:05,040 [INFO] source_code.pipeline: Processing product_01.png
+2026-03-23 23:15:10,363 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:10,403 [INFO] source_code.pipeline: Extracted 7 nutrients from product_01.png
+2026-03-23 23:15:10,403 [INFO] source_code.pipeline: Processing product_02.png
+2026-03-23 23:15:12,798 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:12,799 [INFO] source_code.pipeline: Skipping product_02.png — status: no_data
+2026-03-23 23:15:12,800 [INFO] source_code.pipeline: Processing product_03.png
+2026-03-23 23:15:16,972 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:16,974 [INFO] source_code.pipeline: Extracted 6 nutrients from product_03.png
+2026-03-23 23:15:16,974 [INFO] source_code.pipeline: Processing product_04.png
+2026-03-23 23:15:19,328 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:19,331 [INFO] source_code.pipeline: Skipping product_04.png — status: no_data
+2026-03-23 23:15:19,331 [INFO] source_code.pipeline: Processing product_05.png
+2026-03-23 23:15:21,889 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:21,891 [INFO] source_code.pipeline: Skipping product_05.png — status: no_data
+2026-03-23 23:15:21,892 [INFO] source_code.pipeline: Processing product_06.png
+2026-03-23 23:15:24,346 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:24,348 [INFO] source_code.pipeline: Skipping product_06.png — status: no_data
+2026-03-23 23:15:24,349 [INFO] source_code.pipeline: Processing product_07.jpg
+2026-03-23 23:15:35,507 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:35,509 [INFO] source_code.pipeline: Extracted 21 nutrients from product_07.jpg
+2026-03-23 23:15:35,510 [INFO] source_code.pipeline: Processing product_08.jpg
+2026-03-23 23:15:37,863 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:37,867 [INFO] source_code.pipeline: Skipping product_08.jpg — status: no_data
+2026-03-23 23:15:37,867 [INFO] source_code.pipeline: Processing product_09.png
+2026-03-23 23:15:46,608 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:46,612 [INFO] source_code.pipeline: Extracted 16 nutrients from product_09.png
+2026-03-23 23:15:46,612 [INFO] source_code.pipeline: Processing product_10.png
+2026-03-23 23:15:52,044 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:52,045 [INFO] source_code.pipeline: Extracted 7 nutrients from product_10.png
+2026-03-23 23:15:52,046 [INFO] source_code.pipeline: Processing product_11.png
+2026-03-23 23:15:59,251 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:15:59,255 [INFO] source_code.pipeline: Extracted 15 nutrients from product_11.png
+2026-03-23 23:15:59,256 [INFO] source_code.pipeline: Processing product_12.png
+2026-03-23 23:16:08,231 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:16:08,233 [INFO] source_code.pipeline: Extracted 14 nutrients from product_12.png
+2026-03-23 23:16:08,233 [INFO] source_code.pipeline: Processing product_13.png
+2026-03-23 23:16:12,123 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 23:16:12,168 [INFO] source_code.pipeline: Extracted 4 nutrients from product_13.png
+2026-03-23 23:16:12,225 [INFO] source_code.writer: 90 rows written to output/nutrition_data.csv
+2026-03-23 23:16:12,226 [INFO] source_code.pipeline: Pipeline complete — 90 rows from 8/13 images
+2026-03-24 02:37:59,970 [INFO] source_code.pipeline: Found 13 images in Sample_images
+2026-03-24 02:37:59,971 [INFO] source_code.pipeline: Processing 13 images with concurrency=5
+2026-03-24 02:38:02,255 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:02,512 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:02,988 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:04,395 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:04,734 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:05,872 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:06,348 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:10,341 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:13,800 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:14,235 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:14,613 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:14,677 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:16,780 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 02:38:16,786 [INFO] source_code.pipeline: product_01.png → 7 nutrients extracted
+2026-03-24 02:38:16,787 [INFO] source_code.pipeline: product_02.png → skipped (status: no_data)
+2026-03-24 02:38:16,787 [INFO] source_code.pipeline: product_03.png → 6 nutrients extracted
+2026-03-24 02:38:16,788 [INFO] source_code.pipeline: product_04.png → skipped (status: no_data)
+2026-03-24 02:38:16,788 [INFO] source_code.pipeline: product_05.png → skipped (status: no_data)
+2026-03-24 02:38:16,788 [INFO] source_code.pipeline: product_06.png → skipped (status: no_data)
+2026-03-24 02:38:16,789 [INFO] source_code.pipeline: product_07.jpg → 21 nutrients extracted
+2026-03-24 02:38:16,790 [INFO] source_code.pipeline: product_08.jpg → skipped (status: no_data)
+2026-03-24 02:38:16,790 [INFO] source_code.pipeline: product_09.png → 16 nutrients extracted
+2026-03-24 02:38:16,791 [INFO] source_code.pipeline: product_10.png → 7 nutrients extracted
+2026-03-24 02:38:16,791 [INFO] source_code.pipeline: product_11.png → 15 nutrients extracted
+2026-03-24 02:38:16,791 [INFO] source_code.pipeline: product_12.png → 14 nutrients extracted
+2026-03-24 02:38:16,791 [INFO] source_code.pipeline: product_13.png → 4 nutrients extracted
+2026-03-24 02:38:16,793 [INFO] source_code.writer: 90 rows written to output/nutrition_data.csv
+2026-03-24 02:38:16,794 [INFO] source_code.pipeline: Pipeline complete — 90 rows from 8/13 images
